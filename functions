@@ -1,0 +1,38 @@
+def add(a, b):
+    return a + b
+def sub(a, b):
+    return a - b
+def mul(a, b):
+    return a * b
+def division(a, b):
+    return a / b
+
+def main():
+    print('*******welcome*******')
+    while True:
+        print('1. +')
+        print('2. -')
+        print('3. *')
+        print('4. /')
+        o = int(input('Enter operation:'))
+        a = int(input('Enter the first number: '))
+        b = int(input('Enter the second number: '))
+
+        if o == 1:
+            add(a, b)
+            print('The result: ', add(a, b))
+        elif o== 2:
+            sub(a, b)
+            print('The result: ', sub(a, b))
+        elif o == 3:
+            mul(a, b)
+            print('The result: ', mul(a, b))
+        elif o == 4:
+            division(a, b)
+            print('The result: ', division(a, b))
+            break
+        else:
+            print('unkoun input')
+            print('return again')
+
+main()
